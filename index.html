@@ -7,6 +7,7 @@
     <title>租号平台_租宝贝</title>
     <!--引入主页css-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -19,12 +20,22 @@
            <div class="title_left"></div>
            <div class="title_center">
              <span class="title_span">
-               "您好，欢迎访问"
-               <!---->
-               "虚贝"
-               <!---->
-               "租号平台！"
+               您好，欢迎访问虚贝租号平台！
              </span>
+             <div class="title_header_nav">
+                <!--用户登录标识，需要用js去操控-->
+               <div class="top_title_login">
+                 <span>你好，请</span>
+                 <a href="">登录</a>
+                 <a href="">注册</a>
+               </div>
+               <span>|</span> 
+               <a href="">个人中心</a>
+               <span>|</span>
+               <a href="" target="_blank">帮助中心</a>
+               <span>|</span>
+               <a href="" target="_blank">关于我们</a>
+             </div>
            </div>
            <div class="title_right"></div>
        </div>
@@ -37,20 +48,421 @@
     </div>
       <!--主体区域-->
     <div class="home_container">
-      <div class="home_container_banner"></div>
-      <div class="home_container_free"></div>
-      <div class="home_goods_recommend"></div>
-      <div class="home_goods_steam"></div>
-      <div class="home_goods_activity"></div>
-      <div class="home_goods_tools"></div>
-      <div class="home_goods_comprehensive"></div>
-    </div>
+      <div class="home_container_nav">
+        <div class="home_nav_left"></div>
+        <div class="home_nav_center"></div>
+        <div class="home_nav_right"></div>
+      </div>
+      <div class="home_container_banner">
+        <div class="home_banner_left"></div>
+        <div class="home_banner_center"></div>
+        <div class="home_banner_right"></div>
+      </div>
+      <div class="home_container_free">
+        <div class="home_free_left"></div>
+        <div class="home_free_center"></div>
+        <div class="home_free_right"></div>
+      </div>
+      <div class="home_goods_recommend">
+        <div class="home_recommend_left"></div>
+        <div class="home_recommend_center">
+          <div class="ant_row ant_row_update">
+            <div class="ant_col">
+              <div class="recommend_title">商品推荐</div>
+            </div>
+          </div>
+          <div class="ant_row">
+            <div class="recommend_details">
+              <div class="recommend_hot_goods">
+                <i class="fa fa-fire recommend_icon" aria-hidden="true"></i>
+                <span>热门商品</span>
+              </div>
+              <div class="ant_line">
+               <ul>
+                 <li class="ant_line_active">综合</li>
+                 <li>英雄联盟</li>
+                 <li>绝地求生</li>
+                 <li>穿越火线</li>
+                 <li>逆战</li>
+                 <li>王者荣耀</li>
+                 <li>QQ飞车</li>
+               </ul>
+              </div>
+              <div class="ant_content">
+                  <div class="ant_content_left">
+                    <div class="ant_content_left_cont">
+                      <div class="recommend_goods_one_images">店主自荐</div>
+                      <div class="goods_one_header">
+                        <a href="" target="_blank">
+                          <img src="images/goodsheader.png">
+                        </a>
+                        <div class="goods_one_header_title"></div>
+                      </div>
+                      <div class="goods_one_footer"></div>
+                    </div>
+                  </div><!--
+               --><div class="ant_content_right">
+                    <div class="ant_content_right_cont"></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home_recommend_right"></div>
+      </div>
+      <div class="home_goods_steam">
+        <div class="home_steam_left"></div>
+        <div class="home_steam_center">
+          <div class="ant_row ant_row_update">
+            <div class="ant_col">
+              <div class="steam_title">STEAM专区</div>
+            </div>
+          </div>
+          <div class="ant_row">
+            <div class="steam_details">
+              <div class="steam_new_game"></div>
+              <div class="steam_hot_game">
+                <div>
+                  <div class="steam_hot_game_details">
+                    <div class="ant_row">
+                      <div class="ant_col ant_col_24">
+                        <div class="hot_game_select hot_game_select_active">
+                          <div class="hot_game_arrow"></div>
+                          <span class="hot_game_number">1</span>
+                          <span class="hot_game_name">绝地求生</span>
+                          <span class="hot_game_select_remark">生存</span>
+                          <span class="hot_game_select_remark">射击</span>
+                          <span class="hot_game_select_remark">多人</span>
+                          <div class="hot_game_button">
+                            <a href="" class="ant_btn">
+                              <span>购买正版</span>
+                            </a>
+                            <a href="" class="ant_btn ant_btn_primary">
+                              <span>一元试玩</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home_steam_right"></div>
+      </div>
+      <div class="home_goods_activity">
+        <div class="home_activity_left"></div>
+        <div class="home_activity_center">
+          <div class="ant_row ant_row_update">
+            <div class="ant_col">
+              <div class="activity_title">活动中心</div>
+            </div>
+          </div>
+          <div class="ant_row">
+            <div class="activity_details">
+              <div class="activity_details_card">
+                <a href="" target="_blank"><img src="images/activity01.png"></a>
+                <div>
+                  <div class="ant_row"><span class="activity_span_one">移动端极品账号一元租</span></div>
+                  <div class="ant_row">
+                    <span class="activity_span_two">活动时间：</span>
+                    <span class="activity_span_three">2018-10-10 ~ 2019.03.10</span>
+                  </div>
+                  <div class="ant_row"><span class="activity_span_four">虚贝app 一元即可体验绝地求生，CF，LOL极品账号</span></div>
+                </div>
+              </div>
+              <div class="activity_details_card">
+                <a href="" target="_blank"><img src="images/activity02.png"></a>
+                <div>
+                  <div class="ant_row"><span class="activity_span_one">Steam官方正版CDKey</span></div>
+                  <div class="ant_row">
+                    <span class="activity_span_two">活动时间：</span>
+                    <span class="activity_span_three">2018-10-10 ~ 2019.03.10</span>
+                  </div>
+                  <div class="ant_row"><span class="activity_span_four">GTA5、彩虹六号、绝地求生、太吾绘卷、中国式家长CDKey8.5折永久畅玩</span></div>
+                </div>
+              </div>
+              <div class="activity_details_card">
+                <a href="" target="_blank"><img src="images/activity03.png"></a>
+                <div>
+                  <div class="ant_row"><span class="activity_span_one">商品置顶功能上线</span></div>
+                  <div class="ant_row">
+                    <span class="activity_span_two">活动时间：</span>
+                    <span class="activity_span_three">2018-02-07 ~ 2019.03.10</span>
+                  </div>
+                  <div class="ant_row"><span class="activity_span_four">商品置顶功能上线啦！</span></div>
+                </div>
+              </div>
+              <div class="activity_details_card">
+                <a href="" target="_blank"><img src="images/activity04.png"></a>
+                <div>
+                  <div class="ant_row"><span class="activity_span_one">租号返利</span></div>
+                  <div class="ant_row">
+                    <span class="activity_span_two">活动时间：</span>
+                    <span class="activity_span_three">2019-02.01--2019-03-15</span>
+                  </div>
+                  <div class="ant_row"><span class="activity_span_four">租号就退租金，金额无上限</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home_activity_right"></div>
+      </div>
+      <div class="home_goods_tools">
+        <div class="home_tools_left"></div>
+        <div class="home_tools_center">
+          <div class="ant_row ant_row_update">
+            <div class="ant_col">
+              <div class="tools_title">工具下载</div>
+            </div>
+          </div>
+          <div class="ant_row">
+            <div class="tools_details">
+               <div class="tools_details_left">
+                 <div class="tools_details_left_title_container">
+                    <div class="tools_details_left_icon"></div>
+                    <div class="tools_details_left_title">APP</div>
+                 </div>
+                 <div class="tools_download_button tools_download_button_update">
+                   <div class="tools_button_box">
+                    <span class="tools_button_tittle_one">虚贝APP下载</span>
+                    <span class="tools_button_tittle_two">手机租号，掌上管理商品</span>
+                    <a class="tools_button_icon" href="" target="_blank">立即下载</a>
+                   </div>
+                 </div>
+                 <div class="tools_left_icon_one"></div>
+                 <div class="tools_left_icon_two"></div>
+                 <div class="tools_left_icon_three"></div>
+               </div>
+               <div class="tools_details_center">
+                <div class="tools_details_left_title_container">
+                  <div class="tools_details_left_icon"></div>
+                  <div class="tools_details_left_title">租号宝</div>
+               </div>
+               <div class="tools_download_button">
+                <div class="tools_button_box">
+                 <span class="tools_button_tittle_one">虚贝租号宝下载</span>
+                 <span class="tools_button_tittle_two">商户转租订单软件</span>
+                 <a class="tools_button_icon" href="" target="_blank">立即下载</a>
+                </div>
+              </div>
+              <div class="tools_center_icon_one"></div>
+              <div class="tools_center_icon_two"></div>
+              </div>
+               <div class="tools_details_right">
+                <div class="tools_details_left_title_container">
+                  <div class="tools_details_left_icon"></div>
+                  <div class="tools_details_left_title">虚贝上号器</div>
+               </div>
+               <div class="tools_download_button">
+                <div class="tools_button_box">
+                 <span class="tools_button_tittle_one">虚贝端游上号器</span>
+                 <span class="tools_button_tittle_two">一键自动登录，上号无忧</span>
+                 <a class="tools_button_icon" href="" target="_blank">立即下载</a>
+                </div>
+              </div>
+              <div class="tools_right_icon_one"></div>
+              <div class="tools_right_icon_two"></div>
+               </div>
+               <div class="tools_details_center_one">
+                <div class="tools_details_left_title_container">
+                  <div class="tools_details_left_icon"></div>
+                  <div class="tools_details_left_title">掌上虚贝</div>
+               </div>
+               <div class="tools_download_button tools_download_button_update">
+                <div class="tools_button_box">
+                 <span class="tools_button_tittle_one">掌上虚贝下载</span>
+                 <span class="tools_button_tittle_two">手机租号，掌上管理商品</span>
+                 <a class="tools_button_icon" href="" target="_blank">立即下载</a>
+                </div>
+               </div>
+               <div class="tools_left_icon_one"></div>
+               <div class="tools_left_icon_two"></div>
+               <div class="tools_left_icon_three"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home_tools_right"></div>
+      </div>
+      <div class="home_goods_comprehensive">
+        <div class="home_comprehensive_left"></div>
+        <div class="home_comprehensive_center">
+          <div class="home_comprehensive_center_container">
+            <div class="hccc_left">
+              <div class="hccc_left_question">
+                <div class="ant-row">
+                  <div class="hccc_left_question_header">
+                    <i class="icon fa fa-plus-square" aria-hidden="true"></i>
+                    常见问题
+                  </div>
+                </div>
+                <div class="ant-row">
+                   <ul class="clearfix hccc_left_question_content">
+                     <li>
+                        <i class="icon1 fa fa-question-circle" aria-hidden="true"></i>
+                        <a>押金多久返还</a>
+                     </li>
+                     <li>
+                        <i class="icon1 fa fa-question-circle" aria-hidden="true"></i>
+                        <a>加速租金说明</a> 
+                     </li>
+                     <li>
+                        <i class="icon1 fa fa-question-circle" aria-hidden="true"></i>
+                        <a>充值提现问题</a> 
+                     </li>
+                     <li>
+                        <i class="icon1 fa fa-question-circle" aria-hidden="true"></i>
+                        <a>什么是签约卖家</a> 
+                     </li>
+                     <li>
+                        <i class="icon1 fa fa-question-circle" aria-hidden="true"></i>
+                        <a>租号如何登陆游戏</a> 
+                     </li>
+                     <li>
+                      <i class="icon1 fa fa-question-circle" aria-hidden="true"></i>
+                      <a>上号密码错误怎么办</a> 
+                     </li>
+                     <li>
+                      <i class="icon1 fa fa-question-circle" aria-hidden="true"></i>
+                      <a>常见上号器问题解决方案</a> 
+                     </li>
+                     <li>
+                      <i class="icon1 fa fa-question-circle" aria-hidden="true"></i>
+                      <a>武侠义试玩流程&常见问题</a> 
+                     </li>
+                     <li>
+                      <i class="icon1 fa fa-question-circle" aria-hidden="true"></i>
+                      <a>租号后如何申请维权或售后</a> 
+                     </li>
+                     <li>
+                      <i class="icon1 fa fa-question-circle" aria-hidden="true"></i>
+                      <a>租赁时间快要结束如何续租</a> 
+                     </li>
+                   </ul>
+                </div>
+              </div>
+            </div>
+            <div class="hccc_center">
+              <div class="hccc_center_income">
+                 <div class="ant-row">
+                  <div class="hccc_center_income_header">
+                    <i class="icon fa fa-money" aria-hidden="true"></i>
+                    最近30天收入展示
+                  </div>
+                 </div>
+                 <div class="ant-row">
+                    <!--通过数据库获取-->
+                 </div>
+              </div>
+            </div>
+            <div class="hccc_right">
+              <div class="hccc_right_download">
+                <div class="ant_row">
+                  <div class="hccc_right_download_header">
+                    <i class="icon fa fa-users" aria-hidden="true"></i>
+                     虚贝APP下载
+                  </div>
+                </div>
+                <div class="ant_row">
+                  <div class="hccc_right_download_bg">
+                      <div class="hccc_right_download_qe_code"></div>
+                      <div class="hccc_right_download_words">虚贝APP扫一扫</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home_comprehensive_right"></div>
+      </div>
       <!--底部区域-->
-    <div class="footer">
-       <div class="footer_left"></div>
-       <div class="footer_center"></div>
-       <div class="footer_right"></div>
-    </div>
+      <div>
+        <div class="footer_container">
+          <div class="footer_left"></div>
+          <div class="footer_center">
+            <div class="footer_center_header">
+              <div class="xubei_logo_box"></div>
+              <div class="xingshoubz">
+                <ul>
+                  <li>新手帮助</li>
+                  <li><a href="" target="_blank">免费注册</a></li>
+                  <li><a href="" target="_blank">如何租聘</a></li>
+                  <li><a href="" target="_blank">如何购买</a></li>
+                  <li><a href="" target="_blank">如何发布</a></li>
+                </ul>    
+              </div>
+              <div class="zuhaoaq">
+                <ul>
+                  <li>租号安全</li>
+                  <li><a href="" target="_blank">15天延时转账</a></li>
+                  <li><a href="" target="_blank">租赁押金</a></li>
+                  <li><a href="" target="_blank">百宝箱一键登录</a></li>
+                  <li><a href="" target="_blank">帮助中心</a></li>
+                </ul>
+              </div>
+              <div class="guanyuxb">
+                <ul>
+                  <li>关于虚贝</li>
+                  <li><a href="" target="_blank">关于我们</a></li>
+                  <li><a href="" target="_blank">加入我们</a></li>
+                  <li><a href="" target="_blank">虚贝APP下载</a></li>
+                </ul>
+              </div>
+              <div class="footer_qq">
+                <div>官方在线客服</div>
+                <div class="footer_button">
+                   <a href="" target="_blank">QQ:800055370</a>
+                </div>
+                <div>周一至周日8:00-24:00</div>
+              </div>
+              <div class="guanzugzh">
+                 <ul>
+                   <li>关注公众号</li>
+                   <li class="weixinCode"></li>
+                 </ul>
+              </div>
+              <div class="xiazaiapp">
+                <ul>
+                  <li>APP下载</li>
+                  <li class="downloadApp"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer_center_footer">
+              <div class="footer_youqinglj">
+                <span>友情链接：</span>
+                <span><a href="" target="_blank">斑马加速器</a></span>
+                <span><a href="" target="_blank">代练通</a></span>
+                <span><a href="" target="_blank">游戏陪玩</a></span>
+                <span><a href="" target="_blank">淘外服网</a></span>
+              </div>
+              <div class="footer_zuxiangwl">
+                <span>
+                  Copyright © 2017-2020
+                   <!-- -->
+                   杭州
+                   <!-- -->
+                   诸相网络科技有限公司 (www.
+                   <!-- -->
+                   xubei.com
+                   <!-- -->
+                   ) 版权所有 
+                   <!-- -->
+                   浙ICP备15021515号-1
+                   <a target="_blank" href="" class="police_logo">浙公网安备 33010302003346号</a>
+                </span>
+              </div>
+              <div class="footer_police"></div>
+            </div>
+          </div>
+          <div class="footer_right"></div>
+        </div>
+      </div>
+    </div> 
   </div>
 
 </body>     
