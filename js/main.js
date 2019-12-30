@@ -1,0 +1,12 @@
+(()=>{
+    require.config({
+        baseUrl:"../module",
+        paths:{
+           banner:"module-banner",
+           jq:"../libs/jquery/jquery"  
+        }
+    });
+    require(["banner","jq"],(a,b)=>{
+        console.log(a);
+    })
+})()
